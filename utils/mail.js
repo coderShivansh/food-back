@@ -36,7 +36,7 @@ const forgotPasswordMail = async ({ emailTo, token, reason }) => {
   const subject = `FORGOT PASSWORD`;
   options.title = reason;
   options.brand = "KNIT CANTEEN APP";
-  options.token = `http://localhost:3000/reset-password?${token}`;
+  options.token = `https://knit-canteen-saideep.vercel.app/reset-password?${token}`;
   options.expireIn = 10;
   options.username = emailTo;
   options.reason = reason;
